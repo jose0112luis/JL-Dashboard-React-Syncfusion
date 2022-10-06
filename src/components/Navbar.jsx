@@ -99,10 +99,10 @@ const Navbar = () => {
         >
           <img className='rounded-full w-8 h-8' src={ avatar } alt='profile'/>
           <p>
-            <span class='text-gray-400 text-14'>Hi, </span>
-            <span class='text-gray-400 font-bold ml-1 text-14'>José</span>
+            <span className='text-gray-400 text-14'>Hi, </span>
+            <span className='text-gray-400 font-bold ml-1 text-14'>José</span>
           </p>
-          <MdKeyboardArrowDown class='text-gray-400 text-14' />
+          <MdKeyboardArrowDown className='text-gray-400 text-14' />
         </div>
         </TooltipComponent>
 
