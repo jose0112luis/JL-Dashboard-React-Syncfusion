@@ -79,8 +79,10 @@ const Ecommerce = () => {
             </div>
           </div>
 
-          {/* Gráficos */}
+          {/* Gráficos de Ingresos */}
           <div className='mt-10 flex gap-10 flex-wrap justify-center'>
+
+            {/* Grafico de Línea */}
             <div className='order-r-1 border-color m-4 pr-10'>
               <div>
                 <p>
@@ -108,6 +110,20 @@ const Ecommerce = () => {
                   color='blue'
                 />
               </div>
+
+              <div className='mt-10'>
+                <Button 
+                  color='white'
+                  bgColor='blue'
+                  text='Download Report'
+                  borderRadius='10px'
+                />
+              </div>
+            </div>
+
+            {/* Gráfico de barras */}
+            <div>
+              {}
             </div>
           </div>
 
