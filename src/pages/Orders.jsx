@@ -7,6 +7,7 @@ import { Header } from '../components';
 const Orders = () => {
 
   const toolbarOptions = ['Search'];
+  const editing = { allowDeleting: true, allowEditing: true };
 
   return (
     <div className='m-2 md:m-10 p-2 md:p-10 bg-white rounded-3xl'>
@@ -18,10 +19,13 @@ const Orders = () => {
         allowPaging={true}
         allowSorting={true}
         pageSettings={{ pageSize: 15, pageCount: 3 }}
-        sortSettings={contextMenuItems}
         toolbar={toolbarOptions}
         enableStickyHeader={true}
         enableHover={true}
+        contextMenuItems={contextMenuItems}
+        allowExcelExport={true}
+        allowPdfExport={true}
+        editSettings={editing}
       >
         <ColumnsDirective>
           {
