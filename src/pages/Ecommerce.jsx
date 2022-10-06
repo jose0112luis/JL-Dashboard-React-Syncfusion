@@ -4,7 +4,7 @@ import { GoPrimitiveDot } from 'react-icons/go';
 
 import { Stacked, Pie, Button, SparkLine } from '../components';
 import { earningData, SparklineAreaData, ecomPieChartData } from '../data/dummy';
-import { useStateContext } from '../contexts/ContextProvider'
+import { useStateContext } from '../contexts/ContextProvider';
 
 const Ecommerce = () => {
   return (
@@ -79,7 +79,7 @@ const Ecommerce = () => {
             </div>
           </div>
 
-          {/* Gráficos de Ingresos */}
+          {/* Gráficos de Ingresos / Presupuesto-Gastos */}
           <div className='mt-10 flex gap-10 flex-wrap justify-center'>
 
             {/* Grafico de Línea */}
@@ -123,7 +123,10 @@ const Ecommerce = () => {
 
             {/* Gráfico de barras */}
             <div>
-              {}
+              <Stacked 
+                width='320px'
+                height='360px'
+              />
             </div>
           </div>
 
