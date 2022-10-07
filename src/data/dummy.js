@@ -46,21 +46,26 @@ export const gridOrderStatus = (props) => (
 export const kanbanGrid = [
   { headerText: 'To Do',
     keyField: 'Open',
-    allowToggle: true },
+    allowToggle: true 
+  },
 
   { headerText: 'In Progress',
     keyField: 'InProgress',
-    allowToggle: true },
+    allowToggle: true 
+  },
 
   { headerText: 'Testing',
     keyField: 'Testing',
     allowToggle: true,
-    isExpanded: false },
+    // isExpanded: false 
+  },
 
   { headerText: 'Done',
     keyField: 'Close',
-    allowToggle: true },
+    allowToggle: true 
+  },
 ];
+
 const gridEmployeeProfile = (props) => (
   <div className="flex items-center gap-2">
     <img
@@ -78,6 +83,7 @@ const gridEmployeeCountry = (props) => (
     <span>{props.Country}</span>
   </div>
 );
+
 export const EditorData = () => (
   <div>
     <h3>
@@ -120,6 +126,7 @@ export const EditorData = () => (
     </h3>
   </div>
 );
+
 const customerGridImage = (props) => (
   <div className="image flex gap-4">
     <img
@@ -140,6 +147,7 @@ const customerGridStatus = (props) => (
     <p>{props.Status}</p>
   </div>
 );
+
 export const areaPrimaryXAxis = {
   valueType: 'DateTime',
   labelFormat: 'y',
@@ -159,17 +167,20 @@ export const areaPrimaryYAxis = {
   labelStyle: { color: 'gray' },
 
 };
+
 export const barPrimaryXAxis = {
   valueType: 'Category',
   interval: 1,
   majorGridLines: { width: 0 },
 };
+
 export const barPrimaryYAxis = {
   majorGridLines: { width: 0 },
   majorTickLines: { width: 0 },
   lineStyle: { width: 0 },
   labelStyle: { color: 'transparent' },
 };
+
 const areaChartData = [
   [
     { x: new Date(2002, 0, 1), y: 2.2 },
@@ -326,18 +337,20 @@ export const rangeColorMapping = [
   { label: '1°C to 10°C',
     start: '1',
     end: '10',
-    colors: colorMappingData[1] },
+    colors: colorMappingData[1] 
+  },
 
   { label: '11°C to 20°C',
     start: '11',
     end: '20',
-    colors: colorMappingData[2] },
+    colors: colorMappingData[2] 
+  },
 
   { label: '21°C to 30°C',
     start: '21',
     end: '30',
-    colors: colorMappingData[3] },
-
+    colors: colorMappingData[3] 
+  },
 ];
 
 export const ColorMappingPrimaryXAxis = {
@@ -396,33 +409,39 @@ export const customersGrid = [
   { headerText: 'Name',
     width: '150',
     template: customerGridImage,
-    textAlign: 'Center' },
+    textAlign: 'Center' 
+  },
   { field: 'ProjectName',
     headerText: 'Project Name',
     width: '150',
-    textAlign: 'Center' },
+    textAlign: 'Center' 
+  },
   { field: 'Status',
     headerText: 'Status',
     width: '130',
     format: 'yMd',
     textAlign: 'Center',
-    template: customerGridStatus },
+    template: customerGridStatus 
+  },
   {
     field: 'Weeks',
     headerText: 'Weeks',
     width: '100',
     format: 'C2',
-    textAlign: 'Center' },
+    textAlign: 'Center' 
+  },
   { field: 'Budget',
     headerText: 'Budget',
     width: '100',
     format: 'yMd',
-    textAlign: 'Center' },
+    textAlign: 'Center' 
+  },
 
   { field: 'Location',
     headerText: 'Location',
     width: '150',
-    textAlign: 'Center' },
+    textAlign: 'Center' 
+  },
 
   { field: 'CustomerID',
     headerText: 'Customer ID',
@@ -430,7 +449,6 @@ export const customersGrid = [
     textAlign: 'Center',
     isPrimaryKey: true,
   },
-
 ];
 
 export const employeesGrid = [
@@ -639,7 +657,6 @@ export const earningData = [
     title: 'Sales',
     iconColor: 'rgb(228, 106, 118)',
     iconBg: 'rgb(255, 244, 229)',
-
     pcColor: 'green-600',
   },
   {
@@ -679,7 +696,6 @@ export const recentTransactions = [
     desc: 'Money reversed',
     iconColor: 'rgb(255, 244, 229)',
     iconBg: 'rgb(254, 201, 15)',
-
     pcColor: 'green-600',
   },
   {
@@ -687,7 +703,6 @@ export const recentTransactions = [
     amount: '+$350',
     title: 'Bank Transfer',
     desc: 'Money Added',
-
     iconColor: 'rgb(228, 106, 118)',
     iconBg: 'rgb(255, 244, 229)',
     pcColor: 'green-600',
@@ -935,14 +950,12 @@ export const customersData = [
   },
   {
     CustomerID: 1002,
-
     CustomerName: 'Sunil Joshi',
     CustomerEmail: 'sunil@gmail.com',
     ProjectName: 'Elite Admin',
     Status: 'Active',
     CustomerImage:
       avatar3,
-
     StatusBg: '#8BE78B',
     Weeks: '11',
     Budget: '$3.9k',
@@ -950,7 +963,6 @@ export const customersData = [
   },
   {
     CustomerID: 1003,
-
     CustomerName: 'Andrew McDownland',
     CustomerEmail: 'andrew@gmail.com',
     ProjectName: 'Real Homes WP Theme',
@@ -964,7 +976,6 @@ export const customersData = [
   },
   {
     CustomerID: 1004,
-
     CustomerName: 'Christopher Jamil',
     CustomerEmail: 'jamil@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
@@ -978,7 +989,6 @@ export const customersData = [
   },
   {
     CustomerID: 1005,
-
     CustomerName: 'Michael',
     CustomerEmail: 'michael@gmail.com',
     ProjectName: 'Weekly WP Theme',
@@ -1005,14 +1015,12 @@ export const customersData = [
   },
   {
     CustomerID: 1007,
-
     CustomerName: 'Sunil Joshi',
     CustomerEmail: 'sunil@gmail.com',
     ProjectName: 'Elite Admin',
     Status: 'Active',
     CustomerImage:
       avatar3,
-
     StatusBg: '#8BE78B',
     Weeks: '11',
     Budget: '$3.9k',
@@ -1020,7 +1028,6 @@ export const customersData = [
   },
   {
     CustomerID: 1008,
-
     CustomerName: 'Andrew McDownland',
     CustomerEmail: 'andrew@gmail.com',
     ProjectName: 'Real Homes WP Theme',
@@ -1034,7 +1041,6 @@ export const customersData = [
   },
   {
     CustomerID: 1009,
-
     CustomerName: 'Christopher Jamil',
     CustomerEmail: 'jamil@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
@@ -1048,7 +1054,6 @@ export const customersData = [
   },
   {
     CustomerID: 1010,
-
     CustomerName: 'Michael',
     CustomerEmail: 'michael@gmail.com',
     ProjectName: 'Weekly WP Theme',
@@ -1075,7 +1080,6 @@ export const customersData = [
   },
   {
     CustomerID: 1012,
-
     CustomerName: 'Sunil Joshi',
     CustomerEmail: 'sunil@gmail.com',
     ProjectName: 'Elite Admin',
@@ -1090,7 +1094,6 @@ export const customersData = [
   },
   {
     CustomerID: 1013,
-
     CustomerName: 'Andrew McDownland',
     CustomerEmail: 'andrew@gmail.com',
     ProjectName: 'Real Homes WP Theme',
@@ -1104,7 +1107,6 @@ export const customersData = [
   },
   {
     CustomerID: 1014,
-
     CustomerName: 'Christopher Jamil',
     CustomerEmail: 'jamil@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
@@ -1118,7 +1120,6 @@ export const customersData = [
   },
   {
     CustomerID: 1015,
-
     CustomerName: 'Michael',
     CustomerEmail: 'michael@gmail.com',
     ProjectName: 'Weekly WP Theme',
@@ -1145,14 +1146,12 @@ export const customersData = [
   },
   {
     CustomerID: 1017,
-
     CustomerName: 'Sunil Joshi',
     CustomerEmail: 'sunil@gmail.com',
     ProjectName: 'Elite Admin',
     Status: 'Active',
     CustomerImage:
       avatar3,
-
     StatusBg: '#8BE78B',
     Weeks: '11',
     Budget: '$3.9k',
@@ -1160,7 +1159,6 @@ export const customersData = [
   },
   {
     CustomerID: 1018,
-
     CustomerName: 'Andrew McDownland',
     CustomerEmail: 'andrew@gmail.com',
     ProjectName: 'Real Homes WP Theme',
@@ -1174,7 +1172,6 @@ export const customersData = [
   },
   {
     CustomerID: 1019,
-
     CustomerName: 'Christopher Jamil',
     CustomerEmail: 'jamil@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
@@ -1188,7 +1185,6 @@ export const customersData = [
   },
   {
     CustomerID: 1020,
-
     CustomerName: 'Michael',
     CustomerEmail: 'michael@gmail.com',
     ProjectName: 'Weekly WP Theme',
@@ -1215,14 +1211,12 @@ export const customersData = [
   },
   {
     CustomerID: 1022,
-
     CustomerName: 'Sunil Joshi',
     CustomerEmail: 'sunil@gmail.com',
     ProjectName: 'Elite Admin',
     Status: 'Active',
     CustomerImage:
       avatar3,
-
     StatusBg: '#8BE78B',
     Weeks: '11',
     Budget: '$3.9k',
@@ -1230,7 +1224,6 @@ export const customersData = [
   },
   {
     CustomerID: 1023,
-
     CustomerName: 'Andrew McDownland',
     CustomerEmail: 'andrew@gmail.com',
     ProjectName: 'Real Homes WP Theme',
@@ -1244,7 +1237,6 @@ export const customersData = [
   },
   {
     CustomerID: 1024,
-
     CustomerName: 'Christopher Jamil',
     CustomerEmail: 'jamil@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
@@ -1258,7 +1250,6 @@ export const customersData = [
   },
   {
     CustomerID: 1025,
-
     CustomerName: 'Michael',
     CustomerEmail: 'michael@gmail.com',
     ProjectName: 'Weekly WP Theme',
@@ -1285,14 +1276,12 @@ export const customersData = [
   },
   {
     CustomerID: 1027,
-
     CustomerName: 'Sunil Joshi',
     CustomerEmail: 'sunil@gmail.com',
     ProjectName: 'Elite Admin',
     Status: 'Active',
     CustomerImage:
       avatar3,
-
     StatusBg: '#8BE78B',
     Weeks: '11',
     Budget: '$3.9k',
@@ -1300,7 +1289,6 @@ export const customersData = [
   },
   {
     CustomerID: 1028,
-
     CustomerName: 'Andrew McDownland',
     CustomerEmail: 'andrew@gmail.com',
     ProjectName: 'Real Homes WP Theme',
@@ -1314,7 +1302,6 @@ export const customersData = [
   },
   {
     CustomerID: 1029,
-
     CustomerName: 'Christopher Jamil',
     CustomerEmail: 'jamil@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
@@ -1328,7 +1315,6 @@ export const customersData = [
   },
   {
     CustomerID: 1030,
-
     CustomerName: 'Michael',
     CustomerEmail: 'michael@gmail.com',
     ProjectName: 'Weekly WP Theme',
@@ -1355,14 +1341,12 @@ export const customersData = [
   },
   {
     CustomerID: 1032,
-
     CustomerName: 'Sunil Joshi',
     CustomerEmail: 'sunil@gmail.com',
     ProjectName: 'Elite Admin',
     Status: 'Active',
     CustomerImage:
       avatar3,
-
     StatusBg: '#8BE78B',
     Weeks: '11',
     Budget: '$3.9k',
@@ -1370,7 +1354,6 @@ export const customersData = [
   },
   {
     CustomerID: 1033,
-
     CustomerName: 'Andrew McDownland',
     CustomerEmail: 'andrew@gmail.com',
     ProjectName: 'Real Homes WP Theme',
@@ -1384,7 +1367,6 @@ export const customersData = [
   },
   {
     CustomerID: 1034,
-
     CustomerName: 'Christopher Jamil',
     CustomerEmail: 'jamil@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
@@ -1398,7 +1380,6 @@ export const customersData = [
   },
   {
     CustomerID: 1035,
-
     CustomerName: 'Michael',
     CustomerEmail: 'michael@gmail.com',
     ProjectName: 'Weekly WP Theme',
@@ -1425,14 +1406,12 @@ export const customersData = [
   },
   {
     CustomerID: 1037,
-
     CustomerName: 'Sunil Joshi',
     CustomerEmail: 'sunil@gmail.com',
     ProjectName: 'Elite Admin',
     Status: 'Active',
     CustomerImage:
       avatar3,
-
     StatusBg: '#8BE78B',
     Weeks: '11',
     Budget: '$3.9k',
@@ -1440,7 +1419,6 @@ export const customersData = [
   },
   {
     CustomerID: 1038,
-
     CustomerName: 'Andrew McDownland',
     CustomerEmail: 'andrew@gmail.com',
     ProjectName: 'Real Homes WP Theme',
@@ -2125,7 +2103,6 @@ export const ordersData = [
   {
     OrderID: 10248,
     CustomerName: 'Vinet',
-
     TotalAmount: 32.38,
     OrderItems: 'Fresh Tomato',
     Location: 'USA',
@@ -2269,7 +2246,6 @@ export const ordersData = [
   {
     OrderID: 10248,
     CustomerName: 'Vinet',
-
     TotalAmount: 32.38,
     OrderItems: 'Fresh Tomato',
     Location: 'USA',
@@ -2413,7 +2389,6 @@ export const ordersData = [
   {
     OrderID: 10248,
     CustomerName: 'Vinet',
-
     TotalAmount: 32.38,
     OrderItems: 'Fresh Tomato',
     Location: 'USA',
@@ -2557,7 +2532,6 @@ export const ordersData = [
   {
     OrderID: 10248,
     CustomerName: 'Vinet',
-
     TotalAmount: 32.38,
     OrderItems: 'Fresh Tomato',
     Location: 'USA',
@@ -2701,7 +2675,6 @@ export const ordersData = [
   {
     OrderID: 10248,
     CustomerName: 'Vinet',
-
     TotalAmount: 32.38,
     OrderItems: 'Fresh Tomato',
     Location: 'USA',
@@ -2849,192 +2822,192 @@ export const scheduleData = [
     Id: 1,
     Subject: 'Explosion of Betelgeuse Star',
     Location: 'Space Center USA',
-    StartTime: '2021-01-10T04:00:00.000Z',
-    EndTime: '2021-01-10T05:30:00.000Z',
+    StartTime: '2022-10-10T04:00:00.000Z',
+    EndTime: '2022-10-10T05:30:00.000Z',
     CategoryColor: '#1aaa55',
   },
   {
     Id: 2,
     Subject: 'Thule Air Crash Report',
     Location: 'Newyork City',
-    StartTime: '2021-01-11T06:30:00.000Z',
-    EndTime: '2021-01-11T08:30:00.000Z',
+    StartTime: '2022-10-11T06:30:00.000Z',
+    EndTime: '2022-10-11T08:30:00.000Z',
     CategoryColor: '#357cd2',
   },
   {
     Id: 3,
     Subject: 'Blue Moon Eclipse',
     Location: 'Space Center USA',
-    StartTime: '2021-01-12T04:00:00.000Z',
-    EndTime: '2021-01-12T05:30:00.000Z',
+    StartTime: '2022-10-12T04:00:00.000Z',
+    EndTime: '2022-10-12T05:30:00.000Z',
     CategoryColor: '#7fa900',
   },
   {
     Id: 4,
     Subject: 'Meteor Showers in 2021',
     Location: 'Space Center USA',
-    StartTime: '2021-01-13T07:30:00.000Z',
-    EndTime: '2021-01-13T09:00:00.000Z',
+    StartTime: '2022-10-13T07:30:00.000Z',
+    EndTime: '2022-10-13T09:00:00.000Z',
     CategoryColor: '#ea7a57',
   },
   {
     Id: 5,
     Subject: 'Milky Way as Melting pot',
     Location: 'Space Center USA',
-    StartTime: '2021-01-14T06:30:00.000Z',
-    EndTime: '2021-01-14T08:30:00.000Z',
+    StartTime: '2022-10-14T06:30:00.000Z',
+    EndTime: '2022-10-14T08:30:00.000Z',
     CategoryColor: '#00bdae',
   },
   {
     Id: 6,
     Subject: 'Mysteries of Bermuda Triangle',
     Location: 'Bermuda',
-    StartTime: '2021-01-14T04:00:00.000Z',
-    EndTime: '2021-01-14T05:30:00.000Z',
+    StartTime: '2022-10-14T04:00:00.000Z',
+    EndTime: '2022-10-14T05:30:00.000Z',
     CategoryColor: '#f57f17',
   },
   {
     Id: 7,
     Subject: 'Glaciers and Snowflakes',
     Location: 'Himalayas',
-    StartTime: '2021-01-15T05:30:00.000Z',
-    EndTime: '2021-01-15T07:00:00.000Z',
+    StartTime: '2022-10-15T05:30:00.000Z',
+    EndTime: '2022-10-15T07:00:00.000Z',
     CategoryColor: '#1aaa55',
   },
   {
     Id: 8,
     Subject: 'Life on Mars',
     Location: 'Space Center USA',
-    StartTime: '2021-01-16T03:30:00.000Z',
-    EndTime: '2021-01-16T04:30:00.000Z',
+    StartTime: '2022-10-16T03:30:00.000Z',
+    EndTime: '2022-10-16T04:30:00.000Z',
     CategoryColor: '#357cd2',
   },
   {
     Id: 9,
     Subject: 'Alien Civilization',
     Location: 'Space Center USA',
-    StartTime: '2021-01-18T05:30:00.000Z',
-    EndTime: '2021-01-18T07:30:00.000Z',
+    StartTime: '2022-10-18T05:30:00.000Z',
+    EndTime: '2022-10-18T07:30:00.000Z',
     CategoryColor: '#7fa900',
   },
   {
     Id: 10,
     Subject: 'Wildlife Galleries',
     Location: 'Africa',
-    StartTime: '2021-01-20T05:30:00.000Z',
-    EndTime: '2021-01-20T07:30:00.000Z',
+    StartTime: '2022-10-20T05:30:00.000Z',
+    EndTime: '2022-10-20T07:30:00.000Z',
     CategoryColor: '#ea7a57',
   },
   {
     Id: 11,
     Subject: 'Best Photography 2021',
     Location: 'London',
-    StartTime: '2021-01-21T04:00:00.000Z',
-    EndTime: '2021-01-21T05:30:00.000Z',
+    StartTime: '2022-10-21T04:00:00.000Z',
+    EndTime: '2022-10-21T05:30:00.000Z',
     CategoryColor: '#00bdae',
   },
   {
     Id: 12,
     Subject: 'Smarter Puppies',
     Location: 'Sweden',
-    StartTime: '2021-01-08T04:30:00.000Z',
-    EndTime: '2021-01-08T06:00:00.000Z',
+    StartTime: '2022-10-08T04:30:00.000Z',
+    EndTime: '2022-10-08T06:00:00.000Z',
     CategoryColor: '#f57f17',
   },
   {
     Id: 13,
     Subject: 'Myths of Andromeda Galaxy',
     Location: 'Space Center USA',
-    StartTime: '2021-01-06T05:00:00.000Z',
-    EndTime: '2021-01-06T07:00:00.000Z',
+    StartTime: '2022-10-06T05:00:00.000Z',
+    EndTime: '2022-10-06T07:00:00.000Z',
     CategoryColor: '#1aaa55',
   },
   {
     Id: 14,
     Subject: 'Aliens vs Humans',
     Location: 'Research Center of USA',
-    StartTime: '2021-01-05T04:30:00.000Z',
-    EndTime: '2021-01-05T06:00:00.000Z',
+    StartTime: '2022-11-05T04:30:00.000Z',
+    EndTime: '2022-11-05T06:00:00.000Z',
     CategoryColor: '#357cd2',
   },
   {
     Id: 15,
     Subject: 'Facts of Humming Birds',
     Location: 'California',
-    StartTime: '2021-01-19T04:00:00.000Z',
-    EndTime: '2021-01-19T05:30:00.000Z',
+    StartTime: '2022-11-19T04:00:00.000Z',
+    EndTime: '2022-11-19T05:30:00.000Z',
     CategoryColor: '#7fa900',
   },
   {
     Id: 16,
     Subject: 'Sky Gazers',
     Location: 'Alaska',
-    StartTime: '2021-01-22T05:30:00.000Z',
-    EndTime: '2021-01-22T07:30:00.000Z',
+    StartTime: '2022-11-22T05:30:00.000Z',
+    EndTime: '2022-11-22T07:30:00.000Z',
     CategoryColor: '#ea7a57',
   },
   {
     Id: 17,
     Subject: 'The Cycle of Seasons',
     Location: 'Research Center of USA',
-    StartTime: '2021-01-11T00:00:00.000Z',
-    EndTime: '2021-01-11T02:00:00.000Z',
+    StartTime: '2022-11-11T00:00:00.000Z',
+    EndTime: '2022-11-11T02:00:00.000Z',
     CategoryColor: '#00bdae',
   },
   {
     Id: 18,
     Subject: 'Space Galaxies and Planets',
     Location: 'Space Center USA',
-    StartTime: '2021-01-11T11:30:00.000Z',
-    EndTime: '2021-01-11T13:00:00.000Z',
+    StartTime: '2022-11-11T11:30:00.000Z',
+    EndTime: '2022-11-11T13:00:00.000Z',
     CategoryColor: '#f57f17',
   },
   {
     Id: 19,
     Subject: 'Lifecycle of Bumblebee',
     Location: 'San Fransisco',
-    StartTime: '2021-01-14T00:30:00.000Z',
-    EndTime: '2021-01-14T02:00:00.000Z',
+    StartTime: '2022-11-14T00:30:00.000Z',
+    EndTime: '2022-11-14T02:00:00.000Z',
     CategoryColor: '#7fa900',
   },
   {
     Id: 20,
     Subject: 'Alien Civilization',
     Location: 'Space Center USA',
-    StartTime: '2021-01-14T10:30:00.000Z',
-    EndTime: '2021-01-14T12:30:00.000Z',
+    StartTime: '2022-11-14T10:30:00.000Z',
+    EndTime: '2022-11-14T12:30:00.000Z',
     CategoryColor: '#ea7a57',
   },
   {
     Id: 21,
     Subject: 'Alien Civilization',
     Location: 'Space Center USA',
-    StartTime: '2021-01-10T08:30:00.000Z',
-    EndTime: '2021-01-10T10:30:00.000Z',
+    StartTime: '2022-11-10T08:30:00.000Z',
+    EndTime: '2022-11-10T10:30:00.000Z',
     CategoryColor: '#ea7a57',
   },
   {
     Id: 22,
     Subject: 'The Cycle of Seasons',
     Location: 'Research Center of USA',
-    StartTime: '2021-01-12T09:00:00.000Z',
-    EndTime: '2021-01-12T10:30:00.000Z',
+    StartTime: '2022-12-12T09:00:00.000Z',
+    EndTime: '2022-12-12T10:30:00.000Z',
     CategoryColor: '#00bdae',
   },
   {
     Id: 23,
     Subject: 'Sky Gazers',
     Location: 'Greenland',
-    StartTime: '2021-01-15T09:00:00.000Z',
-    EndTime: '2021-01-15T10:30:00.000Z',
+    StartTime: '2022-12-15T09:00:00.000Z',
+    EndTime: '2022-12-15T10:30:00.000Z',
     CategoryColor: '#ea7a57',
   },
   {
     Id: 24,
     Subject: 'Facts of Humming Birds',
     Location: 'California',
-    StartTime: '2021-01-16T07:00:00.000Z',
-    EndTime: '2021-01-16T09:00:00.000Z',
+    StartTime: '2022-09-16T07:00:00.000Z',
+    EndTime: '2022-09-16T09:00:00.000Z',
     CategoryColor: '#7fa900',
   },
 ];
@@ -3069,6 +3042,7 @@ export const lineChartData = [
     { x: new Date(2011, 0, 1), y: 100 },
   ],
 ];
+
 export const dropdownData = [
   {
     Id: '1',
@@ -3082,6 +3056,7 @@ export const dropdownData = [
     Time: 'May 2021',
   },
 ];
+
 export const SparklineAreaData = [
   { x: 1, yval: 2 },
   { x: 2, yval: 6 },
@@ -3098,24 +3073,24 @@ export const lineCustomSeries = [
     name: 'Germany',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
-    type: 'Line' },
-
+    type: 'Line' 
+  },
   { dataSource: lineChartData[1],
     xName: 'x',
     yName: 'y',
     name: 'England',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
-    type: 'Line' },
-
+    type: 'Line' 
+  },
   { dataSource: lineChartData[2],
     xName: 'x',
     yName: 'y',
     name: 'India',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
-    type: 'Line' },
-
+    type: 'Line' 
+  },
 ];
 
 export const pieChartData = [
@@ -3185,7 +3160,6 @@ export const stackedCustomSeries = [
     background: 'blue',
 
   },
-
   { dataSource: stackedChartData[1],
     xName: 'x',
     yName: 'y',
@@ -3194,7 +3168,6 @@ export const stackedCustomSeries = [
     background: 'red',
 
   },
-
 ];
 
 export const stackedPrimaryXAxis = {
@@ -5863,6 +5836,7 @@ export const financialChartData = [
     volume: 27939544,
   },
 ];
+
 export const PyramidData = [
   { x: 'Sweet Treats', y: 120, text: '120 cal' },
   { x: 'Milk, Youghnut, Cheese', y: 435, text: '435 cal' },
