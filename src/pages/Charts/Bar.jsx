@@ -3,7 +3,7 @@ import { ChartComponent, SeriesCollectionDirective, SeriesDirective, Inject, Col
 
 import { barCustomSeries, barPrimaryXAxis, barPrimaryYAxis } from '../../data/dummy';
 import { useStateContext } from '../../contexts/ContextProvider';
-import { Header } from '../../components';
+import { ChartsHeader } from '../../components';
 
 const Bar = () => {
 
@@ -11,7 +11,7 @@ const Bar = () => {
 
   return (
     <div className='m-4 md:m-10 mt-24 p-10 bg-white dark:bg-secondary-dark-bg rounded-3xl'>
-      <Header category='Chart' title='Area' />
+      <ChartsHeader category='Bars' title='Olympic Medal Counts - RIO' />
 
       <div className='w-full dark:bg-secondary-dark-bg'>
         <ChartComponent

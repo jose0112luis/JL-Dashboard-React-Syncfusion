@@ -3,7 +3,7 @@ import { ChartComponent, SeriesCollectionDirective, SeriesDirective, Inject, Spl
 
 import { areaCustomSeries, areaPrimaryXAxis, areaPrimaryYAxis } from '../../data/dummy';
 import { useStateContext } from '../../contexts/ContextProvider';
-import { Header } from '../../components';
+import { ChartsHeader } from '../../components';
 
 const Area = () => {
 
@@ -11,7 +11,7 @@ const Area = () => {
 
   return (
     <div className='m-4 md:m-10 mt-24 p-10 bg-white dark:bg-secondary-dark-bg rounded-3xl'>
-      <Header category='Chart' title='Area' />
+      <ChartsHeader category='Area' title='Inflation Rate in percentage' />
 
       <div className='w-full dark:bg-secondary-dark-bg'>
         <ChartComponent
