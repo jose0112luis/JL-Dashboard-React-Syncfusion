@@ -17,8 +17,8 @@ const Stacked = ({ width, height }) => {
       primaryYAxis={stackedPrimaryYAxis}
       chartArea={{ border: { width: 0 } }}
       tooltip={{ enable: true }}
-      background={currentMode === 'Dark' ? '#33373E' : '#FFF'}
-      legendSettings={{ background: 'white', margin: 50 }}
+      theme={currentMode === 'Dark' ? 'TailwindDark' : 'Material'}
+      legendSettings={{ margin: 50 }}
     >
       <Inject services={[Legend, Category, StackingColumnSeries, Tooltip]} />
       <SeriesCollectionDirective>
