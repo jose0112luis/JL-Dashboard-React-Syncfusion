@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
@@ -11,7 +11,7 @@ import './App.css';
 
 const App = () => {
 
-  const { setCurrentColor, setCurrentMode, currentMode, activeMenu, currentColor, themeSettings, setThemeSettings } = useStateContext();
+  const { currentMode, activeMenu, currentColor, themeSettings, setThemeSettings } = useStateContext();
 
   return (
     <div className={currentMode ==='Dark' ? 'dark' : ''}>
@@ -38,7 +38,7 @@ const App = () => {
           {/* Menú lateral */}
           {
             activeMenu ? (
-              <div className='w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white'>
+              <div className='w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white' style={{ zIndex: '100000' }}>
                 <Sidebar />
               </div>
             ) : (
@@ -49,7 +49,7 @@ const App = () => {
           }
 
           <div className={`dark:bg-main-dark-bg bg-main-bg min-h-screen w-full ${activeMenu ? 'md:ml-72' : 'flex-2'}`}>
-            <div className='fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full'>
+            <div className='fixed w-full  bg-main-bg dark:bg-main-dark-bg flex md:px-12' style={{ zIndex: '10000' }}>
               <Navbar />
             </div>
 
