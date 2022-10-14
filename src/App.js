@@ -49,7 +49,7 @@ const App = () => {
           }
 
           <div className={`dark:bg-main-dark-bg bg-main-bg min-h-screen w-full ${activeMenu ? 'md:ml-72' : 'flex-2'}`}>
-            <div className='fixed w-full  bg-main-bg dark:bg-main-dark-bg flex md:px-12' style={{ zIndex: '10000' }}>
+            <div className='fixed w-full bg-main-bg dark:bg-main-dark-bg navbar md:static' style={{ zIndex: '10000' }}>
               <Navbar />
             </div>
 
