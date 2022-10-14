@@ -6,6 +6,7 @@ import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 import { links } from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
+import logo_joseluis from '../data/logo-joseluis.png';
 
 const Sidebar = () => {
 
@@ -33,8 +34,11 @@ const Sidebar = () => {
                 onClick={ handleCloseSideBar }
                 className='items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900'
               >
-                <SiShopware />
-                <span>Shoppy</span>
+                {/* <SiShopware />
+                <span>Shoppy</span> */}
+                <div style={{ width: '50%' }}>
+                  <img src={logo_joseluis} alt='logo-joseluis' />
+                </div>
               </Link>
               <TooltipComponent content='Menu' position='BottomCenter'>
                 <button
@@ -52,7 +56,7 @@ const Sidebar = () => {
             </div>
 
             {/* Nav Links */}
-            <div className='mt-10'>
+            <div className='mt-6'>
               {
                 links.map(({ title, links }) => (
                   <div key={ title }>
